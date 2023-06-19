@@ -13,7 +13,7 @@ import img7 from "../../asset/img/product/product-7.jpg";
 import img8 from "../../asset/img/product/product-8.jpg";
 import Footer from "../General/Footer";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import HeadingPage from "../General/HeadingPage";
 const data = [
@@ -23,7 +23,7 @@ const data = [
     price: "$30.00",
   },
   {
-    imageUrl: img2,
+    imageUrl: img3,
     title: "Crab Pool Security",
     price: "$30.00",
   },
@@ -67,7 +67,7 @@ const data2 = [
     discountPercentage: "-20%",
   },
   {
-    imageUrl: img2,
+    imageUrl: img3,
     title: "Sweet Corn",
     price: "$30.00",
     discountPrice: "$36.00",
@@ -127,34 +127,34 @@ function Shop() {
                   <h4>Department</h4>
                   <ul className="">
                     <li>
-                      <a href="#">Fresh Meat</a>
+                      <Link to="/">Fresh Meat</Link>
                     </li>
                     <li>
-                      <a href="#">Vegetables</a>
+                      <Link to="/">Vegetables</Link>
                     </li>
                     <li>
-                      <a href="#">Fruit & Nut Gifts</a>
+                      <Link to="/">Fruit & Nut Gifts</Link>
                     </li>
                     <li>
-                      <a href="#">Fresh Berries</a>
+                      <Link to="/">Fresh Berries</Link>
                     </li>
                     <li>
-                      <a href="#">Ocean Foods</a>
+                      <Link to="/">Ocean Foods</Link>
                     </li>
                     <li>
-                      <a href="#">Butter & Eggs</a>
+                      <Link to="/">Butter & Eggs</Link>
                     </li>
                     <li>
-                      <a href="#">Fastfood</a>
+                      <Link to="/">Fastfood</Link>
                     </li>
                     <li>
-                      <a href="#">Fresh Onion</a>
+                      <Link to="/">Fresh Onion</Link>
                     </li>
                     <li>
-                      <a href="#">Papayaya & Crisps</a>
+                      <Link to="/">Papayaya & Crisps</Link>
                     </li>
                     <li>
-                      <a href="#">Oatmeal</a>
+                      <Link to="/">Oatmeal</Link>
                     </li>
                   </ul>
                 </div>
@@ -200,82 +200,13 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="sidebar__item sidebar__item__color--option my-2 ">
-                  <h4>Colors</h4>
-                  <div className="row row-cols-3 gap-2">
-                    <div class="sidebar__item__color sidebar__item__color--white col">
-                      <label for="white">
-                        White
-                        <input type="radio" id="white" />
-                      </label>
-                    </div>
-                    <div class="sidebar__item__color sidebar__item__color--gray col">
-                      <label for="gray">
-                        Gray
-                        <input type="radio" id="gray" />
-                      </label>
-                    </div>
-                    <div class="sidebar__item__color sidebar__item__color--red col">
-                      <label for="red">
-                        Redcolor
-                        <input type="radio" id="red" />
-                      </label>
-                    </div>
-                    <div class="sidebar__item__color sidebar__item__color--black col">
-                      <label for="black">
-                        Black
-                        <input type="radio" id="black" />
-                      </label>
-                    </div>
-                    <div class="sidebar__item__color sidebar__item__color--blue col">
-                      <label for="blue">
-                        Blue
-                        <input type="radio" id="blue" />
-                      </label>
-                    </div>
-                    <div class="sidebar__item__color sidebar__item__color--green col">
-                      <label for="green">
-                        Green
-                        <input type="radio" id="green" />
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="sidebar__item my-3">
-                  <h4>Popular Size</h4>
-                  <div className="row row-cols-3 gap-2">
-                    <div class="sidebar__item__size col">
-                      <label for="large">
-                        Large
-                        <input type="radio" id="large" />
-                      </label>
-                    </div>
-                    <div class="sidebar__item__size col">
-                      <label for="medium">
-                        Medium
-                        <input type="radio" id="medium" />
-                      </label>
-                    </div>
-                    <div class="sidebar__item__size col">
-                      <label for="small">
-                        Small
-                        <input type="radio" id="small " />
-                      </label>
-                    </div>
-                    <div class="sidebar__item__size col">
-                      <label for="tiny">
-                        Tiny
-                        <input type="radio" id="tiny" />
-                      </label>
-                    </div>
-                  </div>
-                </div>
+
                 <div class="sidebar__item">
                   <div class="latest-product__text">
                     <h4>Latest Products</h4>
                     <div class="latest-product__slider owl-carousel">
                       <div class="latest-prdouct__slider__item">
-                        <a href="#" class="latest-product__item">
+                        <Link to="/" class="latest-product__item">
                           <div class="latest-product__item__pic">
                             <img src={img} alt="" />
                           </div>
@@ -283,8 +214,8 @@ function Shop() {
                             <h6>Crab Pool Security</h6>
                             <span>$30.00</span>
                           </div>
-                        </a>
-                        <a href="#" class="latest-product__item">
+                        </Link>
+                        <Link to="/" class="latest-product__item">
                           <div class="latest-product__item__pic">
                             <img src={img2} alt="" />
                           </div>
@@ -292,8 +223,8 @@ function Shop() {
                             <h6>Crab Pool Security</h6>
                             <span>$30.00</span>
                           </div>
-                        </a>
-                        <a href="#" class="latest-product__item">
+                        </Link>
+                        <Link to="/" class="latest-product__item">
                           <div class="latest-product__item__pic">
                             <img src={img3} alt="" />
                           </div>
@@ -301,37 +232,8 @@ function Shop() {
                             <h6>Crab Pool Security</h6>
                             <span>$30.00</span>
                           </div>
-                        </a>
+                        </Link>
                       </div>
-                      {/* <div class="latest-prdouct__slider__item">
-                        <a href="#" class="latest-product__item">
-                          <div class="latest-product__item__pic">
-                            <img src={img4} alt="" />
-                          </div>
-                          <div class="latest-product__item__text">
-                            <h6>Crab Pool Security</h6>
-                            <span>$30.00</span>
-                          </div>
-                        </a>
-                        <a href="#" class="latest-product__item">
-                          <div class="latest-product__item__pic">
-                            <img src="img/latest-product/lp-2.jpg" alt="" />
-                          </div>
-                          <div class="latest-product__item__text">
-                            <h6>Crab Pool Security</h6>
-                            <span>$30.00</span>
-                          </div>
-                        </a>
-                        <a href="#" class="latest-product__item">
-                          <div class="latest-product__item__pic">
-                            <img src="img/latest-product/lp-3.jpg" alt="" />
-                          </div>
-                          <div class="latest-product__item__text">
-                            <h6>Crab Pool Security</h6>
-                            <span>$30.00</span>
-                          </div>
-                        </a>
-                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -364,22 +266,22 @@ function Shop() {
                                     </div>
                                     <ul className="product__item__pic__hover">
                                       <li>
-                                        <a href="#">
+                                        <Link to="/">
                                           <i className="fa fa-heart"></i>
-                                        </a>
+                                        </Link>
                                       </li>
 
                                       <li>
-                                        <a href="#">
+                                        <Link to="/">
                                           <i className="fa fa-shopping-cart"></i>
-                                        </a>
+                                        </Link>
                                       </li>
                                     </ul>
                                   </div>
                                   <div className="product__discount__item__text">
                                     <span>{item.title}</span>
                                     <h5>
-                                      <a href="#">{item.title}</a>
+                                      <Link to="/">{item.title}</Link>
                                     </h5>
                                     <div className="product__item__price">
                                       {item.price}{" "}
@@ -406,22 +308,22 @@ function Shop() {
                                       </div>
                                       <ul className="product__item__pic__hover">
                                         <li>
-                                          <a href="#">
+                                          <Link to="/">
                                             <i className="fa fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
 
                                         <li>
-                                          <a href="#">
+                                          <Link to="/">
                                             <i className="fa fa-shopping-cart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
                                     <div className="product__discount__item__text">
                                       <span>{item.title}</span>
                                       <h5>
-                                        <a href="#">{item.title}</a>
+                                        <Link to="/">{item.title}</Link>
                                       </h5>
                                       <div className="product__item__price">
                                         {item.price}{" "}
@@ -473,21 +375,21 @@ function Shop() {
                       >
                         <ul class="product__item__pic__hover">
                           <li>
-                            <a href="#">
+                            <Link to="/">
                               <i class="fa fa-heart"></i>
-                            </a>
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="#">
+                            <Link to="/">
                               <i class="fa fa-shopping-cart"></i>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
                       <div class="product__item__text">
                         <h6>
-                          <a href="#">{item.title}</a>
+                          <Link to="/">{item.title}</Link>
                         </h6>
                         <h5>{item.price}</h5>
                       </div>
@@ -496,12 +398,12 @@ function Shop() {
                 ))}
               </div>
               <div class="product__pagination">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">
+                <Link to="/">1</Link>
+                <Link to="/">2</Link>
+                <Link to="/">3</Link>
+                <Link to="/">
                   <i class="fa fa-long-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

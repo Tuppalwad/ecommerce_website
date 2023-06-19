@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import Navbar from "../General/Navbar";
 import Header from "../General/Header";
@@ -9,6 +8,7 @@ import img3 from "../../asset/img/product/details/thumb-3.jpg";
 import img4 from "../../asset/img/product/details/thumb-4.jpg";
 import "../../css/ProductDetail.css";
 import Footer from "../General/Footer";
+import { Link } from "react-router-dom";
 const data = [
   {
     img: img1,
@@ -41,19 +41,19 @@ function ProductDetail() {
     <div>
       <Header></Header>
       <Navbar></Navbar>
-      <section class="product-details spad">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <div class="product__details__pic">
-                <div class="product__details__pic__item">
+      <section className="product-details spad">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-6">
+              <div className="product__details__pic">
+                <div className="product__details__pic__item">
                   <img
-                    class="product__details__pic__item--large"
+                    className="product__details__pic__item--large"
                     src={img}
                     alt=""
                   />
                 </div>
-                <div class="product__details__pic__slider owl-carousel my-2 ">
+                <div className="product__details__pic__slider owl-carousel my-2 ">
                   <img
                     data-imgbigurl="img/product/details/product-details-2.jpg"
                     src={img1}
@@ -81,36 +81,36 @@ function ProductDetail() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 ">
-              <div class="product__details__text">
+            <div className="col-lg-6 col-md-6 ">
+              <div className="product__details__text">
                 <h3>Vetgetable’s Package</h3>
-                <div class="product__details__rating">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half-o"></i>
+                <div className="product__details__rating">
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star-half-o"></i>
                   <span>(18 reviews)</span>
                 </div>
-                <div class="product__details__price">$50.00</div>
+                <div className="product__details__price">$50.00</div>
                 <p>
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                  Vestibulum ac diam sit amet quam vehicula elementum sed sit
-                  amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit
-                  amet quam vehicula elementum sed sit amet dui. Proin eget
+                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar
+                  Link. Vestibulum ac diam sit amet quam vehicula elementum sed
+                  sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam
+                  sit amet quam vehicula elementum sed sit amet dui. Proin eget
                   tortor risus.
                 </p>
-                <div class="product__details__quantity">
-                  <div class="quantity">
-                    <div class="pro-qty">
+                <div className="product__details__quantity">
+                  <div className="quantity">
+                    <div className="pro-qty">
                       <input type="text" value="1" />
                     </div>
                   </div>
                 </div>
-                <button class="primary-btn">ADD TO CARD</button>
-                <a href="#" class="heart-icon">
-                  <i class="fa fa-heart"></i>
-                </a>
+                <button className="primary-btn">ADD TO CARD</button>
+                <Link href="#" className="heart-icon">
+                  <i className="fa fa-heart"></i>
+                </Link>
                 <ul>
                   <li>
                     <b>Availability</b> <span>In Stock</span>
@@ -126,25 +126,25 @@ function ProductDetail() {
                   </li>
                   <li>
                     <b>Share on</b>
-                    <div class="share">
-                      <a href="#" className="btn btn-light btn-rounded">
+                    <div className="share">
+                      <Link href="#" className="btn btn-light btn-rounded">
                         <i className="fa fa-facebook footer__icon"></i>
-                      </a>
-                      <a href="#" className="btn btn-light btn-rounded">
+                      </Link>
+                      <Link href="#" className="btn btn-light btn-rounded">
                         <i className="fa fa-instagram footer__icon"></i>
-                      </a>
-                      <a href="#" className="btn btn-light btn-rounded">
+                      </Link>
+                      <Link href="#" className="btn btn-light btn-rounded">
                         <i className="fa fa-twitter footer__icon"></i>
-                      </a>
-                      <a href="#" className="btn btn-light btn-rounded">
+                      </Link>
+                      <Link href="#" className="btn btn-light btn-rounded">
                         <i className="fa fa-pinterest footer__icon"></i>
-                      </a>
+                      </Link>
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-12 my-3">
+            <div className="col-lg-12 my-3">
               <section className="product-details ">
                 <div className="container">
                   <div className="row">
@@ -199,7 +199,7 @@ function ProductDetail() {
                                   Vivamus suscipit tortor eget felis porttitor
                                   volutpat. Curabitur arcu erat, accumsan id
                                   imperdiet et, porttitor at sem. Praesent
-                                  sapien massa, convallis a pellentesque nec,
+                                  sapien massa, convallis Link pellentesque nec,
                                   egestas non nisi. Vestibulum ac diam sit amet
                                   quam vehicula elementum sed sit amet dui.
                                   Vestibulum ante ipsum primis in faucibus orci
@@ -226,7 +226,7 @@ function ProductDetail() {
                                   Vivamus suscipit tortor eget felis porttitor
                                   volutpat. Curabitur arcu erat, accumsan id
                                   imperdiet et, porttitor at sem. Praesent
-                                  sapien massa, convallis a pellentesque nec,
+                                  sapien massa, convallis Link pellentesque nec,
                                   egestas non nisi. Vestibulum ac diam sit amet
                                   quam vehicula elementum sed sit amet dui.
                                   Vestibulum ante ipsum primis in faucibus orci
@@ -253,7 +253,7 @@ function ProductDetail() {
                                   Vivamus suscipit tortor eget felis porttitor
                                   volutpat. Curabitur arcu erat, accumsan id
                                   imperdiet et, porttitor at sem. Praesent
-                                  sapien massa, convallis a pellentesque nec,
+                                  sapien massa, convallis Link pellentesque nec,
                                   egestas non nisi. Vestibulum ac diam sit amet
                                   quam vehicula elementum sed sit amet dui.
                                   Vestibulum ante ipsum primis in faucibus orci
@@ -276,22 +276,22 @@ function ProductDetail() {
         </div>
       </section>
 
-      <section class="related-product">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section-title related__product__title">
+      <section className="related-product">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title related__product__title">
                 <h2>Related Product</h2>
               </div>
             </div>
           </div>
-          <div class="row">
+          <div className="row">
             {data.map((item) => {
               return (
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-3 col-md-4 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: `url(${item.img})`,
                         resizeMode: "contain",
@@ -299,23 +299,23 @@ function ProductDetail() {
                         backgroundSize: "cover",
                       }}
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
-                          <a href="#">
-                            <i class="fa fa-heart"></i>
-                          </a>
+                          <Link href="#">
+                            <i className="fa fa-heart"></i>
+                          </Link>
                         </li>
 
                         <li>
-                          <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
+                          <Link href="#">
+                            <i className="fa fa-shopping-cart"></i>
+                          </Link>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
-                        <a href="#">{item.name}</a>
+                        <Link href="#">{item.name}</Link>
                       </h6>
                       <h5>{item.price}</h5>
                     </div>

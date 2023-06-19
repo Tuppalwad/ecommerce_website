@@ -6,7 +6,7 @@ function HeadingPage(props) {
     <div className="my-3">
       {" "}
       <section
-        class="breadcrumb-section set-bg"
+        className="breadcrumb-section set-bg"
         style={{
           backgroundImage: `url(${bannerImage})`,
           backgroundRepeat: "no-repeat",
@@ -15,12 +15,12 @@ function HeadingPage(props) {
           height: "200px",
         }}
       >
-        <div class="container my-3">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <div class="breadcrumb__text">
+        <div className="container my-3">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <div className="breadcrumb__text">
                 <h2>{props.title1}</h2>
-                <div class="breadcrumb__option">
+                <div className="breadcrumb__option">
                   <a href="./index.html">{props.title}</a>
                   <span className="text-white">{props.subtitle}</span>
                 </div>

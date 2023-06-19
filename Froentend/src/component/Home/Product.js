@@ -108,7 +108,7 @@ function Product() {
                   ))}
                 </Slider>
                 <Slider {...settings}>
-                  {latestProducts.map((product, index) => (
+                  {topRatedProducts.map((product, index) => (
                     <div className="latest-product__item" key={index}>
                       <div className="latest-product__item__pic">
                         <img src={product.imageUrl} alt="" />

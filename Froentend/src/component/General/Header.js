@@ -1,184 +1,188 @@
 import React from "react";
-import Navbar from "./Navbar";
 import logoimg from "../../asset/img/logo.png";
 import "../../css/style.css";
 import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
-      <nav class="navbar navbar-expand-sm bg-light  navbar-fixed-top navbar-light">
-        <div class="container">
-          {/* logo hrer  */}
-          <Link class="navbar-brand logodesktop logomobile" to="/">
+      <nav className="navbar navbar-expand-sm bg-light  navbar-fixed-top navbar-light">
+        <div className="container">
+          <Link className="navbar-brand logodesktop logomobile" to="/">
             <img src={logoimg} alt="logo" />
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#demo"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item ">
-                <Link class="nav-link" to="/">
-                  <icon class="fa fa-envelope" aria-hidden="true"></icon>
+          <div className="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul className="navbar-nav">
+              <li className="nav-item ">
+                <Link className="nav-link" to="/">
+                  <icon className="fa fa-envelope" aria-hidden="true"></icon>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
                   hello@colorlib.com
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
                   |
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
                   Free Shipping for all Order of $99
                 </Link>
               </li>
             </ul>
             {/* social media icon hear  */}
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
-                  <icon class="fa fa-facebook" aria-hidden="true"></icon>
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
+                  <icon className="fa fa-facebook" aria-hidden="true"></icon>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
-                  <icon class="fa fa-twitter" aria-hidden="true"></icon>
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
+                  <icon className="fa fa-twitter" aria-hidden="true"></icon>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
-                  <icon class="fa fa-linkedin" aria-hidden="true"></icon>
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
+                  <icon className="fa fa-linkedin" aria-hidden="true"></icon>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
-                  <icon class="fa fa-pinterest" aria-hidden="true"></icon>
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
+                  <icon className="fa fa-pinterest" aria-hidden="true"></icon>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
                   |
                 </Link>
               </li>
-              <li class="nav-item">
-                <div class="dropdown">
+              <li className="nav-item">
+                <div className="dropdown">
                   <button
-                    class="btn dropdown-toggle"
+                    className="btn dropdown-toggle"
                     type="button"
                     data-bs-toggle="dropdown"
                   >
                     English
                   </button>
-                  <ul class="dropdown-menu">
+                  <ul className="dropdown-menu">
                     <li>
-                      <Link class="dropdown-item" to="/">
+                      <Link className="dropdown-item" to="/">
                         English
                       </Link>
                     </li>
                     <li>
-                      <Link class="dropdown-item" to="/">
-                        Spanish
+                      <Link className="dropdown-item" to="/">
+                        Hindi
                       </Link>
                     </li>
                     <li>
-                      <Link class="dropdown-item" to="/">
-                        French
+                      <Link className="dropdown-item" to="/">
+                        Marathi
                       </Link>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
                   |
                 </Link>
               </li>
               {/* login icon hear */}
-              <li class="nav-item">
-                <Link class="nav-link" to="/login">
-                  <icon class="fa fa-user" aria-hidden="true"></icon>
-                  <span class="ms-1">Register or Sign in</span>
+              <li className="nav-item">
+                <Link className="nav-link" to="/login">
+                  <icon className="fa fa-user" aria-hidden="true"></icon>
+                  <span className="ms-1">Register or Sign in</span>
                 </Link>
               </li>
             </ul>
           </div>
         </div>
-        <div class="offcanvas offcanvas-start" id="demo">
-          <div class="offcanvas-header">
-            <Link class="navbar-brand" to="/">
+        <div className="offcanvas offcanvas-start" id="demo">
+          <div className="offcanvas-header">
+            <Link className="navbar-brand" to="/">
               <img src={logoimg} alt="logo" />
             </Link>
             <button
               type="button"
-              class="btn-close"
+              className="btn-close"
               data-bs-dismiss="offcanvas"
             ></button>
           </div>
-          <nav class="navbar navbar-expand-sm navbar-light bg-white">
-            <div class="container">
-              <div class="d-flex flex-column" style={{ marginLeft: "30px" }}>
+          <nav className="navbar navbar-expand-sm navbar-light bg-white">
+            <div className="container">
+              <div
+                className="d-flex flex-column"
+                style={{ marginLeft: "30px" }}
+              >
                 <div>
-                  <ul class="navbar-nav ms-auto d-flex flex-row">
-                    <li class="nav-item" style={{ marginLeft: "30px" }}>
-                      <Link class="nav-link" to="/">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
+                  <ul className="navbar-nav ms-auto d-flex flex-row">
+                    <li className="nav-item" style={{ marginLeft: "30px" }}>
+                      <Link className="nav-link" to="/">
+                        <i className="fa fa-heart" aria-hidden="true"></i>
                       </Link>
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <Link
-                        class="nav-link"
+                        className="nav-link"
                         to="/"
                         style={{ marginLeft: "30px" }}
                       >
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <i
+                          className="fa fa-shopping-cart"
+                          aria-hidden="true"
+                        ></i>
                       </Link>
                     </li>
-                    <li class="nav-item" style={{ marginLeft: "30px" }}>
-                      <Link class="nav-link " to="/">
+                    <li className="nav-item" style={{ marginLeft: "30px" }}>
+                      <Link className="nav-link " to="/">
                         |
                       </Link>
                     </li>
-                    <li class="nav-item" style={{ marginLeft: "30px" }}>
+                    <li className="nav-item" style={{ marginLeft: "30px" }}>
                       <Link
-                        class="nav-link "
+                        className="nav-link "
                         style={{ font: "bold", fontWeight: "700" }}
                         to="/"
                       >
-                        item: <span class="ms-1">$150.00</span>
+                        item: <span className="ms-1">$150.00</span>
                       </Link>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <ul class="navbar-nav navItem mx-auto">
-                    <li class="nav-item">
+                  <ul className="navbar-nav navItem mx-auto">
+                    <li className="nav-item">
                       <Link
-                        class="nav-link homeitem text-success text-bold"
+                        className="nav-link homeitem text-success text-bold"
                         to="/"
                       >
                         HOME
                       </Link>
                     </li>
                     <hr />
-                    <li class="nav-item">
-                      <Link class="nav-link homeitem" to="/Shop">
+                    <li className="nav-item">
+                      <Link className="nav-link homeitem" to="/Shop">
                         SHOP
                       </Link>
                     </li>
                     <hr />
-                    <li class="nav-item dropdown">
+                    <li className="nav-item dropdown">
                       <Link
-                        class="nav-link homeitem"
+                        className="nav-link homeitem"
                         to="#"
                         id="navbarDropdown"
                         role="button"
@@ -186,43 +190,46 @@ function Header() {
                         aria-expanded="false"
                       >
                         PAGES
-                        <i class="fa fa-angle-down ms-2" aria-hidden="true"></i>
+                        <i
+                          className="fa fa-angle-down ms-2"
+                          aria-hidden="true"
+                        ></i>
                       </Link>
                       <ul
-                        class="dropdown-menu"
+                        className="dropdown-menu"
                         aria-labelledby="dropdownMenuButton"
                       >
                         <li>
-                          <Link class="dropdown-item" to="/ProductDetail">
+                          <Link className="dropdown-item" to="/ProductDetail">
                             Shop Detail
                           </Link>
                         </li>
                         <li>
-                          <Link class="dropdown-item" to="/Shopcart">
+                          <Link className="dropdown-item" to="/Shopcart">
                             Shoping Cart
                           </Link>
                         </li>
                         <li>
-                          <Link class="dropdown-item" to="/Checkout">
+                          <Link className="dropdown-item" to="/Checkout">
                             Checkout
                           </Link>
                         </li>
                         <li>
-                          <Link class="dropdown-item" to="/BLogdetail">
+                          <Link className="dropdown-item" to="/BLogdetail">
                             Blog Detail
                           </Link>
                         </li>
                       </ul>
                     </li>
                     <hr />
-                    <li class="nav-item">
-                      <Link class="nav-link homeitem" to="/Blog">
+                    <li className="nav-item">
+                      <Link className="nav-link homeitem" to="/Blog">
                         BLOG
                       </Link>
                     </li>
                     <hr />
-                    <li class="nav-item homeitem">
-                      <Link class="nav-link" to="/Contact">
+                    <li className="nav-item homeitem">
+                      <Link className="nav-link" to="/Contact">
                         CONTACT
                       </Link>
                     </li>
@@ -230,51 +237,63 @@ function Header() {
                   </ul>
                 </div>
                 <div>
-                  <nav class="navbar navbar-expand-sm navbar-light d-sm-none">
-                    <div class="collapse navbar-collapse" id="sidebarCollapse">
-                      <ul class="navbar-nav flex-row justify-content-between">
-                        <li class="nav-item">
-                          <Link class="nav-link" to="/">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <nav className="navbar navbar-expand-sm navbar-light d-sm-none">
+                    <div
+                      className="collapse navbar-collapse"
+                      id="sidebarCollapse"
+                    >
+                      <ul className="navbar-nav flex-row justify-content-between">
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/">
+                            <i
+                              className="fa fa-facebook"
+                              aria-hidden="true"
+                            ></i>
                           </Link>
                         </li>
-                        <li class="nav-item">
-                          <Link class="nav-link" to="/">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/">
+                            <i className="fa fa-twitter" aria-hidden="true"></i>
                           </Link>
                         </li>
-                        <li class="nav-item">
-                          <Link class="nav-link" to="/">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/">
+                            <i
+                              className="fa fa-linkedin"
+                              aria-hidden="true"
+                            ></i>
                           </Link>
                         </li>
-                        <li class="nav-item">
-                          <Link class="nav-link" to="/">
-                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/">
+                            <i
+                              className="fa fa-pinterest"
+                              aria-hidden="true"
+                            ></i>
                           </Link>
                         </li>
-                        <li class="nav-item">
-                          <div class="dropdown">
+                        <li className="nav-item">
+                          <div className="dropdown">
                             <button
-                              class="btn dropdown-toggle"
+                              className="btn dropdown-toggle"
                               type="button"
                               data-bs-toggle="dropdown"
                             >
                               English
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul className="dropdown-menu">
                               <li>
-                                <Link class="dropdown-item" to="/">
+                                <Link className="dropdown-item" to="/">
                                   English
                                 </Link>
                               </li>
                               <li>
-                                <Link class="dropdown-item" to="/">
+                                <Link className="dropdown-item" to="/">
                                   Spanish
                                 </Link>
                               </li>
                               <li>
-                                <Link class="dropdown-item" to="/">
+                                <Link className="dropdown-item" to="/">
                                   French
                                 </Link>
                               </li>
@@ -285,47 +304,56 @@ function Header() {
                     </div>
                   </nav>
 
-                  <div class="container">
-                    <div class="d-flex flex-column">
-                      <ul class="navbar-nav flex-row justify-content-between">
-                        <li class="nav-item">
-                          <Link class="nav-link" to="/">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <div className="container">
+                    <div className="d-flex flex-column">
+                      <ul className="navbar-nav flex-row justify-content-between">
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/">
+                            <i
+                              className="fa fa-facebook"
+                              aria-hidden="true"
+                            ></i>
                           </Link>
                         </li>
-                        <li class="nav-item">
-                          <Link class="nav-link" to="/">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/">
+                            <i className="fa fa-twitter" aria-hidden="true"></i>
                           </Link>
                         </li>
-                        <li class="nav-item">
-                          <Link class="nav-link" to="/">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/">
+                            <i
+                              className="fa fa-linkedin"
+                              aria-hidden="true"
+                            ></i>
                           </Link>
                         </li>
-                        <li class="nav-item">
-                          <Link class="nav-link" to="/">
-                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/">
+                            <i
+                              className="fa fa-dribbble"
+                              aria-hidden="true"
+                            ></i>
                           </Link>
                         </li>
                       </ul>
-                      <ul class="nav-item my-3">
-                        <div class="dropdown">
+                      <ul className="nav-item my-3">
+                        <div className="dropdown">
                           <button
-                            class="btn dropdown-toggle"
+                            className="btn dropdown-toggle"
                             type="button"
                             data-bs-toggle="dropdown"
                           >
                             English
                           </button>
-                          <ul class="dropdown-menu">
+                          <ul className="dropdown-menu">
                             <li>
-                              <Link class="dropdown-item" to="/">
+                              <Link className="dropdown-item" to="/">
                                 English
                               </Link>
                             </li>
                             <li>
-                              <Link class="dropdown-item" to="/">
+                              <Link className="dropdown-item" to="/">
                                 Spanish
                               </Link>
                             </li>
@@ -333,22 +361,25 @@ function Header() {
                         </div>
                       </ul>
                     </div>
-                    <div class="">
-                      <ul class="navbar-nav d-flex flex-column">
-                        <li class="nav-item d-flex flex-row">
+                    <div className="">
+                      <ul className="navbar-nav d-flex flex-column">
+                        <li className="nav-item d-flex flex-row">
                           <Link
-                            class="nav-link "
+                            className="nav-link "
                             style={{ marginRight: "10px" }}
                             to="/"
                           >
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <i
+                              className="fa fa-envelope"
+                              aria-hidden="true"
+                            ></i>
                           </Link>
-                          <Link class="nav-link" to="/">
+                          <Link className="nav-link" to="/">
                             hello@colorlib.com
                           </Link>
                         </li>
-                        <li class="nav-item">
-                          <Link class="nav-link" to="/">
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/">
                             Free Shipping for all Orders of $99
                           </Link>
                         </li>
